@@ -1,0 +1,47 @@
+.babu{
+	width: 400px;
+	height: 450px;
+	background-image: url(./image/baby.jpg);
+	background-size: 100% 100%;
+	background-position: center center;
+	margin: 20px auto 0px;
+	transition: .5s;
+	position: relative;
+}
+.babu:hover{
+	background-size: 150% 150%;
+}
+.babu:before{
+	content: '';
+	display: block;
+	width: 200px;
+	height: 450px;
+	left: 0px;
+	top: 0px;
+	background-color: green;
+	position: absolute;
+	transition: .5s;
+
+
+}
+.babu:after{
+	content: '';
+	display: block;
+	width: 200px;
+	height: 450px;
+	right: 0px;
+	top: 0px;
+	background-color: red;
+	position: absolute;
+	transition: .5s;
+
+
+}
+.babu:hover:before{
+	left: -200px;
+	transform: rotate(180deg);
+}
+.babu:hover:after{
+	right: -200px;
+	transform: rotate(180deg);
+}
